@@ -2,26 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Brice';
+  src:url("../../public/fonts/Brice-Bold.woff2") format(woff2),
+  url('/fonts/Brice-Bold.woff') format('woff');
+  font-weight: 700;
+ 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.mySwiper{
+  width: 100%;
+}
+
+/* h2{
+font-family: Brice;
+} */
+
+.from-left {
+	        animation: from-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+}
+.from-right {
+  animation: from-right 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+}
+
+
+
+@keyframes from-left {
+  0% {
+  
+            transform: translateX(-750px);
+    opacity: 0;
+  }
+  100% {
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@keyframes from-right {
+  0% {
+  
+            transform: translateX(750px);
+    opacity: 0;
+  }
+  100% {
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
+
+
+
