@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="from-left w-[58.33%] relative">
         <Image
           src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Copy%20of%20LSPR_0211.png"
-          className="w-full h-full"
+          className="w-full h-full object-fill"
           width={840}
           height={720}
           alt="image"
@@ -46,7 +46,7 @@ const HeroSection = () => {
       </div>
       <div className="from-right bg-[#C0D9D9] w-[41.67%]">
         <div className="w-full flex flex-col py-[84px] px-[60px]">
-          <h2 className="text-[64px] leading-[88%]">Taster Bundle</h2>
+          <h2 className="text-[64px]  leading-[88%]">Taster Bundle</h2>
           <div className="flex gap-3 items-center mt-3 mb-6">
             <div className="flex gap-[1px]">
               <svg
