@@ -10,6 +10,8 @@ const HeroSection = () => {
   }, []);
 
   return (
+
+    
     <div className="w-full flex">
       <div className="from-left w-[58.33%] relative">
         <Image
@@ -115,6 +117,7 @@ const HeroSection = () => {
           <div className="flex">
             {tabTex.map((text, ind) => (
               <div
+              key={ind}
                 onMouseEnter={() => {
                   setActive(ind);
                 }}
